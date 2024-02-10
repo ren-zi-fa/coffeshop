@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <title>order</title>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
+    <div class="grid grid-cols-2 mt-4 justify-center items-center px-4">
+      <div class="">
+        <a href="../index.html">
+          <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7" />
+          </svg>
+        </a>
+      </div>
+      <div class="capitalize">
+        <h3 class="me-6">order</h3>
+      </div>
+    </div>
+    <div class="w-fit mt-12 mx-auto relative bg-gray-400 rounded-lg text-white mb-4">
+      <div class="absolute left-0 top-0 w-1/2 h-full bg-amber-700 rounded-lg transition duration-500" id="btn"></div>
+      <button type="button" class="py-2 px-10 cursor-pointer bg-amber-700 bg-transparent border-1 outline-none relative text-center rounded-sm" onclick="leftClick()" id="btn-old">Deliver</button>
+      <button type="button" class="py-2 px-10 cursor-pointer bg-transparent border-1 outline-none relative text-center rounded-sm" onclick="rightClick()" id="btn-new">pickup</button>
+    </div>
+    <div class="px-10">
+      <p class="text-sm font-bold capitalize">delivery address</p>
+      <p class="text-sm font-bold capitalize mt-2">Jln Kpg sutoyo</p>
+      <p class="text-sm font-normal capitalize">kpg sutoyo 620, Blizen, Tanjungbalai</p>
+
+      <div class="flex mt-5 gap-4 mb-4">
+        <a href="" class="border-2 inline-flex px-2 rounded-xl py-1">
+          <svg class="w-6 h-6 mr-2 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M18 5V4c0-.6-.4-1-1-1H9a1 1 0 0 0-.8.3l-4 4a1 1 0 0 0-.2.6V20c0 .6.4 1 1 1h12c.6 0 1-.4 1-1v-5M9 3v4c0 .6-.4 1-1 1H4m11.4.8 2.7 2.7m1.2-3.9a2 2 0 0 1 0 3l-6.6 6.6L9 18l.7-3.7 6.7-6.7a2 2 0 0 1 3 0Z"
+            />
+          </svg>
+          Edit address
+        </a>
+        <a href="" class="border-2 inline-flex px-2 rounded-xl py-1">
+          <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 4h3c.6 0 1 .4 1 1v15c0 .6-.4 1-1 1H6a1 1 0 0 1-1-1V5c0-.6.4-1 1-1h3m0 3h6m-3 5h3m-6 0h0m3 4h3m-6 0h0m1-13v4h4V3h-4Z" />
+          </svg>
+          Add Note
+        </a>
+      </div>
+    </div>
+    <div class="border-b-2"></div>
+    <div class="grid grid-cols-3 justify-center my-4 px-4">
+      <img src="../assets/details-coffe.png" alt="" class="w-1/2" />
+      <div class="relative right-10">
+        <p class="font-bold text-lg">Cappucino</p>
+        <p>witch chocolatte</p>
+      </div>
+      <div class="flex items-center px-2 relative right-8">
+        <a href="" class="px-2">
+          <svg class="w-8 h-8 p-2 border-2 rounded-full text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" d="M5 12h14m-7 7V5" /></svg
+        ></a>
+        <p>1</p>
+        <a href="" class="px-2">
+          <svg class="w-8 h-8 p-2 border-2 rounded-full text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" d="M5 12h14" /></svg
+        ></a>
+      </div>
+    </div>
+
+    <div class="my-10 px-10">
+      <p class="text-lg font-bold">Payment Summary</p>
+      <div class="grid grid-cols-2 gap-4 capitalize">
+        <div class="">
+          <p>price</p>
+          <div class="">delivery free</div>
+        </div>
+        <div class="font-semibold">
+          <div class="">$ 4.53</div>
+          <div class="">
+            <span class="line-through">$ 2.0</span>
+            $ 1.0
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-b-2"></div>
+    <div class="grid grid-cols-2 px-10 gap-4">
+      <div class="">Total Payment</div>
+      <div class="font-semibold">$ 5.53</div>
+    </div>
+    <div class="ml-3">
+      <div class="grid grid-cols-2 gap-4 mt-4">
+        <div class="inline-flex mx-2">
+          <svg class="w-[28px] h-[28px] text-amber-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="1"
+              d="M8 7V6c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1h-1M3 18v-7c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H4a1 1 0 0 1-1-1Zm8-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+            />
+          </svg>
+          <div class="bg-amber-700 px-6 rounded-full relative left-4 text-white">Cash</div>
+          <div class="bg-gray-400 px-6 rounded-full text-gray-800 font-semibold">$5.3</div>
+        </div>
+        <div class="">
+          <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9 8h10M9 12h10M9 16h10M5 8h0m0 4h0m0 4h0" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <button class="text-white bg-amber-700 hover:bg-amber-800 font-medium rounded-xl text-sm px-20 mt-4 py-4 flex mx-auto">Order</button>
+    <script>
+      var btn = document.getElementById("btn");
+      var btn1 = document.getElementById("btn-new");
+      var btn2 = document.getElementById("btn-old");
+
+      function leftClick() {
+        btn.classList.remove("left-32");
+        btn.classList.add("left-0");
+      }
+
+      function rightClick() {
+        btn.classList.remove("left-0");
+        btn.classList.add("left-32");
+      }
+    </script>
+  </body>
+</html>
